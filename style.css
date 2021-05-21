@@ -1,0 +1,42 @@
+/* * {
+    box-sizing: border-box;
+} */
+
+/* .container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 42px auto;
+    grid-template-areas:
+       "top"
+       "menu"
+       "bottom";
+ } */
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw; 
+    margin: none;
+}
+.title{
+    font-size: 2em;
+    text-align: center;
+}
+
+.title h1{
+    background-color: tan;
+    margin-top:0px;
+    height:120px;
+    margin-bottom:0px;
+}
+
+
+#pages p{
+    font-size: 1.3em;
+    text-align: center;
+    word-spacing: 20px;
+    background-color: rgb(223, 206, 184);
+    margin-top: 0px;
+    height: 40px;
+}

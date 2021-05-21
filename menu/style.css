@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw; 
+}
+.title{
+    font-size: 2em;
+    text-align: center;
+}
+
+.title h1{
+    background-color: tan;
+}
+
+#pages {
+    font-size: 1.3em;
+    text-align: center;
+    word-spacing: 20px;
+    background-color: rgb(223, 206, 184);
+    margin-top: none;
+}
