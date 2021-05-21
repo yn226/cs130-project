@@ -23,3 +23,8 @@ main{
     background-color: rgb(223, 206, 184);
     margin-top: none;
 }
+
+img {
+    height: 300px;
+    width: 300px;
+}
