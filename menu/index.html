@@ -12,6 +12,31 @@
             <h1>The Roasted Bean</h1>
             <h3>Menu</h3>
           </div>
+          <div class="track-item" data-preview-track="https://p.scdn.co/mp3-preview/0b87de031d085eb01ba57cb76dad26b54695f374?cid=9697a3a271d24deea38f8b7fbfa0e13c">
+            <!-- <img src="https://i.scdn.co/image/1aacaefb0ef07755e5a155d96ee7f1073063e428"> -->
+            <div class="label">
+                <p>
+                    Play me for some ambiance!
+                </p>
+            </div>
+        </div>
+        <div class="player">
+            <div class="controls">
+                <i id="rwd" class="fas fa-step-backward"></i>
+                <i id="play_pause" class="far fa-play-circle"></i>
+                <i id="ffwd" class="fas fa-step-forward"></i>
+                <!-- <i class="fas play-track fa-pause" aria-hidden="true"></i> -->
+            </div>
+            <div class="slider">
+                <audio preload class="audio">
+                    <source src="#" type="audio/mpeg" />
+                </audio>
+                <span id="time-elapsed">00:00</span>
+                <input type="range" id="player-time" value="1" max="100" min="1" step="1">
+                <span id="time-total">00:30</span>
+            </div>
+            <audio id="track" src="" />
+        </div>
         </section> 
 
         <section id="pages">
@@ -23,8 +48,123 @@
             </p>
         </section>
 
-        <main>
-        <section id="menu-items">
+        <main class = "content">
+            <section class="cards">
+                <section class="menu-item">
+                    <div>
+                        <img src="MenuItems/Americano.jpg" />
+                        <div class="caption">Americano</div>
+                    </div>
+                </section>
+            </section>
+            
+            <section class="cards">
+                <section class="menu-item">
+                    <div>
+                        <img src="MenuItems/Cortado.jpg" />
+                        <div class="caption">Cortado</div>
+                    </div>
+                </section>
+            </section>
+            <section class="cards">
+                <section class="menu-item">
+                    <div>
+                        <img src="MenuItems/Cappuccino.jpg" />
+                        <div class="caption">Cappuccino</div>
+                    </div>
+                </section>
+            </section>
+            <section class="cards">
+                <section class="menu-item">
+                    <div>
+                        <img src="MenuItems/Flat_white.jpg" />
+                        <div class="caption">Flat White</div>
+                    </div>
+                </section>
+            </section>
+            <section class="cards">
+                <section class="menu-item">
+                    <div>
+                        <img src="MenuItems/Latte.jpg" />
+                        <div class="caption">Latte</div>
+                    </div>
+                </section>
+            </section>
+            <section class="cards">
+                <section class="menu-item">
+                    <div>
+                        <img src="MenuItems/Macchiato.jpg" />
+                        <div class="caption">Macchihato</div>
+                    </div>
+                </section>
+            </section>
+            <section class="cards">
+                <section class="menu-item">
+                    <div>
+                        <img src="MenuItems/Mocha.jpg" />
+                        <div class="caption">Mocha</div>
+                    </div>
+                </section>
+            </section>
+            <section class="cards">
+                <section class="menu-item">
+                    <div>
+                        <img src="MenuItems/Tea.jpg" />
+                        <div class="caption">Tea</div>
+                    </div>
+                </section>
+            </section>
+            <!-- <section class="menu-item">
+                <div>
+                    <img src="MenuItems/Americano.jpg" />
+                    <h3>Americano</h3>
+                </div>
+            </section>
+            <section class="menu-item">
+                <div>
+                    <img src="MenuItems/Cortado.jpg" />
+                    <h3>Cortado</h3>
+                </div>
+            </section>
+            <section class="menu-item">
+                <div>
+                    <img src="MenuItems/Cappuccino.jpg" />
+                    <h3>Cappuccino</h3>
+                </div>
+            </section>
+            <section class="menu-item">
+                <div>
+                    <img src="MenuItems/Flat_white.jpg" />
+                    <h3>Flat White</h3>
+                </div>
+            </section>
+            <section class="menu-item">
+                <div>
+                    <img src="MenuItems/Latte.jpg" />
+                    <h3>Latte</h3>
+                </div>
+            </section>
+            <section class="menu-item">
+                <div>
+                    <img src="MenuItems/Macchiato.jpg" />
+                    <h3>Macchiato</h3>
+                </div>
+            </section><section class="menu-item">
+                <div>
+                    <img src="MenuItems/Mocha.jpg" />
+                    <h3>Mocha</h3>
+                </div>
+            </section>
+            <section class="menu-item">
+                <div>
+                    <img src="MenuItems/Tea.jpg" />
+                    <h3>Tea</h3>
+                </div>
+            </section> -->
+
+
+
+        <!-- <section id="menu-items">
             <div class="americano" style="background-image:url('MenuItems/Americano.jpg')"></div>
             <div class="cortado" style="background-image:url('MenuItems/Cortado')"></div>
             <img src="MenuItems/Americano.jpg" />
@@ -34,10 +174,14 @@
             <img src="MenuItems/Latte.jpg" />
             <img src="MenuItems/Macchiato.jpg" />
             <img src="MenuItems/Mocha.jpg" />
-            <img src="MenuItems/Tea.jpg">
+            <img src="MenuItems/Tea.jpg"> -->
+
+        
         </main>
 
 
         <script type="text/javascript" src="index.js"></script>
+        <script src="https://kit.fontawesome.com/62a7c74d0d.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="audio-player.js"></script>
     </body>
 </html>

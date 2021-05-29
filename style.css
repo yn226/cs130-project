@@ -13,6 +13,11 @@
        "bottom";
  } */
 
+ .container {
+     background-color: rgb(223, 206, 184);
+ }
+
+
 main{
     display: flex;
     flex-wrap: wrap;
@@ -25,7 +30,7 @@ main{
 }
 
 .title h1{
-    background-color: tan;
+    background-color: rgb(223, 206, 184);
     margin-top:0px;
     height:120px;
     margin-bottom:0px;
@@ -39,4 +44,46 @@ main{
     background-color: rgb(223, 206, 184);
     margin-top: 0px;
     height: 40px;
+    margin-bottom: 0px;
 }
+
+.parallax-one, .parallax-two, .parallax-three {
+    border: solid 1px #000;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+
+.parallax-one {
+    background-image: url(https://blog.mistobox.com/wp-content/uploads/2020/09/brewmethods.jpg);
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+/* <img src="MenuItems/Latte.jpg" /> */
+
+.parallax-two {
+    background-image: url(https://images.indianexpress.com/2020/12/coffee-2306471_1280.jpg);
+    color: white;
+    font-size: 1.5em;
+}
+
+.parallax-three {
+    background-image: url(https://assets.bonappetit.com/photos/5c366551f212512d0e6cefd0/master/pass/Basically-Coffee-0219-03.jpg);
+    background-blend-mode: screen;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+
+
+
+
+

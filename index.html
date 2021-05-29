@@ -10,7 +10,32 @@
         <section>
           <div class="title">
             <h1>The Roasted Bean</h1>
-          </div>
+          </div>            
+          <div class="track-item" data-preview-track="https://p.scdn.co/mp3-preview/0b87de031d085eb01ba57cb76dad26b54695f374?cid=9697a3a271d24deea38f8b7fbfa0e13c">
+                <!-- <img src="https://i.scdn.co/image/1aacaefb0ef07755e5a155d96ee7f1073063e428"> -->
+                <div class="label">
+                    <p>
+                        Play me for some ambiance!
+                    </p>
+                </div>
+            </div>
+            <div class="player">
+                <div class="controls">
+                    <i id="rwd" class="fas fa-step-backward"></i>
+                    <i id="play_pause" class="far fa-play-circle"></i>
+                    <i id="ffwd" class="fas fa-step-forward"></i>
+                    <!-- <i class="fas play-track fa-pause" aria-hidden="true"></i> -->
+                </div>
+                <div class="slider">
+                    <audio preload class="audio">
+                        <source src="#" type="audio/mpeg" />
+                    </audio>
+                    <span id="time-elapsed">00:00</span>
+                    <input type="range" id="player-time" value="1" max="100" min="1" step="1">
+                    <span id="time-total">00:30</span>
+                </div>
+                <audio id="track" src="" />
+            </div>
         </section> 
 
         <section id="pages">
@@ -22,35 +47,46 @@
             </p>
         </section>
 
-        <section>
+        <!-- <section>
             <div class="block">
               <p><span class="information-one">W</span>rite information on here</p>
               
               <p>First part of the blurb </p>
              </div>
-           </section>
+           </section> -->
            <section>
               <div class="parallax-one">
-                <h2>Big Info Over Picture 1</h2>
+                <h2>Our History</h2>
+                <p>The Roasted Bean was first opened in Chicago in 1999, with 3 new locations opening since then.</p>
+                <p>We pride ourselves on our perfectly roasted coffee beans, sourced ethically from around the world.</p>
               </div>
-          </section>
+            </section>
+
           <section>
-              <div class="block">
-                  <p><span class="first-character sc">P</span>RO is responsible for assigning referees to professional men’s and women’s leagues in the U.S. such as the MLS and NWLS. It is not associated with the ISRC.</p>
-                  
-                  <p class="margin-top-10">        
-                  <p>Non-picture information, if you want</p>
-              </div>
-          </section>
+            <div class="parallax-two">
+              <h2>Why visit The Roasted Bean?</h2>
+              <p>We offer a unique environment for focus and collaboration. So whether you just want to grab drinks with
+                a friend, energize for a study session, or get some group work done, we are the perfect place for you!</p>
+            </div>
+        </section>
           
            <section>
-              <div class="parallax-two">
-                <h2>Big Info Over Picture 2</h2>
+              <div class="parallax-three">
+                <h2>Hours</h2>
+                <p>Monday: 6AM to 8PM</p>
+                <p>Tuesday: 6AM to 8PM</p>
+                <p>Wednesday: 6AM to 8PM</p>
+                <p>Thursday: 6AM to 8PM</p>
+                <p>Friday: 6AM to 8PM</p>
+                <p>Saturday: 7AM to 7PM</p>
+                <p>Sunday: 8AM to 6PM</p>
               </div>
           </section>
             </main>
         </div>
       </div>
-
+      <script src="https://kit.fontawesome.com/62a7c74d0d.js" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="audio-player.js"></script>
+      <script type="text/javascript" src="index.js"></script>
     </body>
 </html>
