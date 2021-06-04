@@ -1,9 +1,17 @@
 * {
     box-sizing: border-box;
 }
+
+.container {
+    background-color: rgb(223, 206, 184);
+}
 .content {
     grid-area: gallery;
     /* background-color:rgb(223, 206, 184) */
+}
+
+.content {
+    background-color: white;
 }
 
 main{
@@ -14,12 +22,25 @@ main{
 .title{
     font-size: 2em;
     text-align: center;
-    background-color: tan;
+}
+.title h1{
+    background-color: rgb(223, 206, 184);
+    margin-top:0px;
+    height:120px;
+    margin-bottom:0px;
 }
 
-.title h1{
-    background-color: tan;
+
+#pages p{
+    font-size: 1.3em;
+    text-align: center;
+    word-spacing: 20px;
+    background-color: rgb(223, 206, 184);
+    margin-top: 0px;
+    height: 40px;
+    margin-bottom: 0px;
 }
+
 
 #pages {
     font-size: 1.3em;
@@ -64,7 +85,7 @@ img {
 }
 
 .menu-item > div {
-    border: solid 1px #CCC;
+    border: solid 3px tan;
     padding: 10px;
     border-radius: 5px;
 }
@@ -82,4 +103,15 @@ img {
     display: flex;
     justify-content: center;
     font-size: 1.5em;
+}
+
+.menu-item:hover .regular {
+    display: none;
+}
+.menu-item .hover {
+    display: none
+}
+
+.menu-item:hover .hover {
+    display: inline-block;
 }

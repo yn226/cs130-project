@@ -2,6 +2,21 @@
     box-sizing: border-box;
 }
 
+.container {
+    background-color: rgb(223, 206, 184);
+}
+
+.information {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* grid-template-rows: 1fr; */
+    grid-template-areas: 
+       "a b"; 
+    min-height: 100vh;
+    grid-row-gap: 30px;
+    grid-column-gap: 20px;
+ }
+
 main{
     display: flex;
     flex-wrap: wrap;
@@ -22,4 +37,32 @@ main{
     word-spacing: 20px;
     background-color: rgb(223, 206, 184);
     margin-top: none;
+}
+
+.map {
+    grid-area: a;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.3em;
+}
+
+.map img {
+    max-width: 75%;
+    padding: 10px;
+    border: solid 3px tan;
+    border-radius: 5px;
+}
+
+.about {
+    grid-area: b;
+    margin-top: 60px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+    margin-right: 60px;
+}
+
+#comment {
+    width: 90%;
+    height: 20%;
 }

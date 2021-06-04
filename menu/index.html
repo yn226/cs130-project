@@ -1,43 +1,41 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <title>Image: background-attachment: fixed</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-
+      <div class="container">
         <section>
           <div class="title">
             <h1>The Roasted Bean</h1>
-            <h3>Menu</h3>
-          </div>
+          </div>            
           <div class="track-item" data-preview-track="https://p.scdn.co/mp3-preview/0b87de031d085eb01ba57cb76dad26b54695f374?cid=9697a3a271d24deea38f8b7fbfa0e13c">
-            <!-- <img src="https://i.scdn.co/image/1aacaefb0ef07755e5a155d96ee7f1073063e428"> -->
-            <div class="label">
-                <p>
-                    Play me for some ambiance!
-                </p>
+                <div class="label">
+                    <p>
+                        Play me for some ambiance!
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="player">
-            <div class="controls">
-                <i id="rwd" class="fas fa-step-backward"></i>
-                <i id="play_pause" class="far fa-play-circle"></i>
-                <i id="ffwd" class="fas fa-step-forward"></i>
-                <!-- <i class="fas play-track fa-pause" aria-hidden="true"></i> -->
+            <div class="player">
+                <div class="controls">
+                    <i id="rwd" class="fas fa-step-backward"></i>
+                    <i id="play_pause" class="far fa-play-circle"></i>
+                    <i id="ffwd" class="fas fa-step-forward"></i>
+                    <!-- <i class="fas play-track fa-pause" aria-hidden="true"></i> -->
+                </div>
+                <div class="slider">
+                    <audio preload class="audio">
+                        <source src="#" type="audio/mpeg" />
+                    </audio>
+                    <span id="time-elapsed">00:00</span>
+                    <input type="range" id="player-time" value="1" max="100" min="1" step="1">
+                    <span id="time-total">00:30</span>
+                </div>
+                <audio id="track" src="" />
             </div>
-            <div class="slider">
-                <audio preload class="audio">
-                    <source src="#" type="audio/mpeg" />
-                </audio>
-                <span id="time-elapsed">00:00</span>
-                <input type="range" id="player-time" value="1" max="100" min="1" step="1">
-                <span id="time-total">00:30</span>
-            </div>
-            <audio id="track" src="" />
-        </div>
-        </section> 
+        </section>
 
         <section id="pages">
             <p>
@@ -52,7 +50,8 @@
             <section class="cards">
                 <section class="menu-item">
                     <div>
-                        <img src="MenuItems/Americano.jpg" />
+                        <img src="MenuItems/Americano.jpg" class = "regular"/>
+                        <img src="HoverItems/Americano_hover.jpg" class = "hover">
                         <div class="caption">Americano</div>
                     </div>
                 </section>
@@ -61,7 +60,8 @@
             <section class="cards">
                 <section class="menu-item">
                     <div>
-                        <img src="MenuItems/Cortado.jpg" />
+                        <img src="MenuItems/Cortado.jpg" class = "regular"/>
+                        <img src="HoverItems/Cortado_hover.jpg" class = "hover">
                         <div class="caption">Cortado</div>
                     </div>
                 </section>
@@ -69,7 +69,8 @@
             <section class="cards">
                 <section class="menu-item">
                     <div>
-                        <img src="MenuItems/Cappuccino.jpg" />
+                        <img src="MenuItems/Cappuccino.jpg" class = "regular"/>
+                        <img src="HoverItems/Cappuccino_hover.jpg" class = "hover">
                         <div class="caption">Cappuccino</div>
                     </div>
                 </section>
@@ -77,7 +78,8 @@
             <section class="cards">
                 <section class="menu-item">
                     <div>
-                        <img src="MenuItems/Flat_white.jpg" />
+                        <img src="MenuItems/Flat_white.jpg" class = "regular"/>
+                        <img src="HoverItems/Flat_white_hover.jpg" class = "hover" />
                         <div class="caption">Flat White</div>
                     </div>
                 </section>
@@ -85,7 +87,8 @@
             <section class="cards">
                 <section class="menu-item">
                     <div>
-                        <img src="MenuItems/Latte.jpg" />
+                        <img src="MenuItems/Latte.jpg" class = "regular"/>
+                        <img src="HoverItems/Latte_hover.jpg" class = "hover">
                         <div class="caption">Latte</div>
                     </div>
                 </section>
@@ -93,7 +96,8 @@
             <section class="cards">
                 <section class="menu-item">
                     <div>
-                        <img src="MenuItems/Macchiato.jpg" />
+                        <img src="MenuItems/Macchiato.jpg" class = "regular"/>
+                        <img src="HoverItems/Macchiato_hover.jpg" class = "hover">
                         <div class="caption">Macchihato</div>
                     </div>
                 </section>
@@ -101,7 +105,8 @@
             <section class="cards">
                 <section class="menu-item">
                     <div>
-                        <img src="MenuItems/Mocha.jpg" />
+                        <img src="MenuItems/Mocha.jpg" class = "regular"/>
+                        <img src="HoverItems/Mocha_hover.jpg" class = "hover">
                         <div class="caption">Mocha</div>
                     </div>
                 </section>
@@ -109,7 +114,8 @@
             <section class="cards">
                 <section class="menu-item">
                     <div>
-                        <img src="MenuItems/Tea.jpg" />
+                        <img src="MenuItems/Tea.jpg" class = "regular"/>
+                        <img src="HoverItems/Brewed_Tea_hover.jpg" class = "hover">
                         <div class="caption">Tea</div>
                     </div>
                 </section>
@@ -180,8 +186,8 @@
         </main>
 
 
-        <script type="text/javascript" src="index.js"></script>
         <script src="https://kit.fontawesome.com/62a7c74d0d.js" crossorigin="anonymous"></script>
         <script type="text/javascript" src="audio-player.js"></script>
+        <script type="text/javascript" src="index.js"></script>
     </body>
 </html>

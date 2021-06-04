@@ -6,36 +6,35 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+      <div class="container">
         <section>
           <div class="title">
             <h1>The Roasted Bean</h1>
-            <h3>About Us</h3>
-          </div>
+          </div>            
           <div class="track-item" data-preview-track="https://p.scdn.co/mp3-preview/0b87de031d085eb01ba57cb76dad26b54695f374?cid=9697a3a271d24deea38f8b7fbfa0e13c">
-            <!-- <img src="https://i.scdn.co/image/1aacaefb0ef07755e5a155d96ee7f1073063e428"> -->
-            <div class="label">
-                <p>
-                    Play me for some ambiance!
-                </p>
+                <div class="label">
+                    <p>
+                        Play me for some ambiance!
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="player">
-            <div class="controls">
-                <i id="rwd" class="fas fa-step-backward"></i>
-                <i id="play_pause" class="far fa-play-circle"></i>
-                <i id="ffwd" class="fas fa-step-forward"></i>
-                <!-- <i class="fas play-track fa-pause" aria-hidden="true"></i> -->
+            <div class="player">
+                <div class="controls">
+                    <i id="rwd" class="fas fa-step-backward"></i>
+                    <i id="play_pause" class="far fa-play-circle"></i>
+                    <i id="ffwd" class="fas fa-step-forward"></i>
+                    <!-- <i class="fas play-track fa-pause" aria-hidden="true"></i> -->
+                </div>
+                <div class="slider">
+                    <audio preload class="audio">
+                        <source src="#" type="audio/mpeg" />
+                    </audio>
+                    <span id="time-elapsed">00:00</span>
+                    <input type="range" id="player-time" value="1" max="100" min="1" step="1">
+                    <span id="time-total">00:30</span>
+                </div>
+                <audio id="track" src="" />
             </div>
-            <div class="slider">
-                <audio preload class="audio">
-                    <source src="#" type="audio/mpeg" />
-                </audio>
-                <span id="time-elapsed">00:00</span>
-                <input type="range" id="player-time" value="1" max="100" min="1" step="1">
-                <span id="time-total">00:30</span>
-            </div>
-            <audio id="track" src="" />
-        </div>
         </section> 
 
         <section id="pages">
@@ -49,6 +48,24 @@
         <script src="https://kit.fontawesome.com/62a7c74d0d.js" crossorigin="anonymous"></script>
         <script type="text/javascript" src="audio-player.js"></script>
         <script type="text/javascript" src="index.js"></script>
+
+      </div>
+
+        <div class="information">
+            <section class = "map">
+                <!-- <div id='map' /> -->
+                <p>Visit us here, in the heart of Chicago!</p>
+                <img src="Map.jpg" />
+            </section>
+            <section class = "about">
+                <p>Address: 123 East Grand Avenue, Chicago, IL </p>
+                <p>(312)-345-6789</p>
+                <p>roastedbean@gmail.com</p>
+                <p>Leave a comment for us below!</p>
+                <input type="text" id="comment">
+           </section>
+        </div>
+
     </body>
 
 </html>
