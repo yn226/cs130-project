@@ -147,4 +147,4 @@ const audioPlayer = AudioPlayer('.player', audioFile);
 //     zoom: 13
 // });
 
-initScreen();
+// initScreen();

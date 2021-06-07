@@ -17,6 +17,22 @@
      background-color: rgb(223, 206, 184);
  }
 
+ .track-item {
+     text-align: center;
+     font-style:italic;
+ }
+
+ .controls {
+     margin: auto;
+     width: 5.2%;
+ }
+
+ .slider {
+     margin: auto;
+     width: 21.3%;
+     margin-bottom: 20px;
+}
+
 
 main{
     display: flex;
@@ -34,13 +50,15 @@ main{
     margin-top:0px;
     height:120px;
     margin-bottom:0px;
+    padding-top: 40px;
+    padding-bottom: 0px;
 }
 
 
 #pages p{
     font-size: 1.3em;
     text-align: center;
-    word-spacing: 20px;
+    word-spacing: 100px;
     background-color: rgb(223, 206, 184);
     margin-top: 0px;
     height: 40px;
